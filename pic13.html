@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centered Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+			background-image: url('haha.gif');
+        }
+        img {
+            max-width: 50%;
+            height: 50%;
+        }
+		.previous {
+		position: absolute;
+		top: 40%;
+		left: 65%;
+		width: 30%;
+		height: 30%;
+	   }
+	   .next {
+	    position: absolute;
+		top: 35%;
+		left: 8%;
+		width: 25%;
+		height: 40%;
+	   }
+	   
+    </style>
+</head>
+<body>
+     <div class="center">
+  <a href="pic14.html" onclick="changeSlide(-1)"><img src="right.png"; style="width:80px; height:100px; alt="Previous" class="previous"></a>
+  <img id="slideshowImage" src="pic13.jpeg" alt="Centered Image">
+  <a href="pic12.html" onclick="changeSlide(1)"><img src="left.png"; style="width:80px; height:125px; alt="Next" class="next"></a>
+</body>
+</html>
